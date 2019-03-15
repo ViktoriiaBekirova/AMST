@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  display: none;
+  width: rem(680);
+  max-width: 100%;
+  height: rem(800);
+  max-height: 100%;
+  left: 50%;
+  top: 50%;
+  background-image: url("/assets/img/fon_form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  z-index: 100;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#0f0f0e, 0.6);
+  z-index: 50;
+}
+.open {
+  display: block;
+}
+.modal .close-button {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  padding: 5px 10px;
+  font-size: rem(25);
+  border: 0;
+  background: $font-base-color;
+  color: #0f0f0e;
+  cursor: pointer;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMST</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main__shadow">
+            <header class="header">
+                <h1 class="header__text">часы, которые выбирают сильные мужчины</h1>
+            </header>
+            <div class="content">
+                <div class="bestseller">
+                    <h2 class="bestseller__text">хит продаж!</h2>
+                </div>
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col col--3 col-md--4">
+                            <div class="options">
+                                <div class="options-content">
+                                    <div class="options-content__logo icon_1"></div>
+                                    <h3 class="options-content__text">стекло с сапфировым покрытием</h3>
+                                </div>
+                                <div class="options">
+                                    <div class="options-content__logo icon_2"></div>
+                                    <h3 class="options-content__text">противоударные и надежные</h3>
+                                </div>
+                                <div class="options">
+                                    <div class="options-content__logo icon_3"></div>
+                                    <h3 class="options-content__text">водонепроницаемый корпус</h3>
+                                </div>
+                                <div class="security">
+                                    <div class="security__img">
+                                        <img src="/assets/img/security_1.png">
+                                    </div>
+                                    <div class="security__img">
+                                        <img src="/assets/img/security_2.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--6 col-md--4">
+                            <div class="product">
+                                <div class="product__img"></div>
+                                <div class="product__sale">
+                                    <h1 class="product__sale_discount">-72%</h1>
+                                </div>
+                                <div class="product__price">
+                                    <span class="product__price_prev">3 535k IDR</span>
+                                    <span class="product__price_next">990k IDR</span>
+                                </div>
+                            </div>
+                            <div class="time-content">
+                                <div class="time">
+                                    <div class="time__clock"></div>
+                                    <span class="time__text">часы</span>
+                                </div>
+                                <div class="time">
+                                    <div class="time__minute"></div>
+                                    <span class="time__text">минуты</span>
+                                </div>
+                                <div class="time">
+                                    <div class="time__second"></div>
+                                    <span class="time__text">секунды</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--3 col-md--4">
+                            <div class="rating">
+                                <div class="rating__stars">
+                                    <img src="/assets/img/stars.png">
+                                </div>
+                                <p class="rating__text"><span>средний рейтинг</span>среди наших покупателей</p>
+                                <div class="reviews">
+                                    <span class="reviews__text">читать отзывы</span>
+                                </div>
+                                <div class="conditions">
+                                    <h2>доставка</h2>
+                                    <h2 class="color">оплата</h2>
+                                </div>
+                                <div class="delivery">
+                                    <div class="delivery-content">
+                                        <div class="delivery-content__logo icon_4"></div>
+                                        <div class="delivery-content__text">Оставьте заявку и мы вам перезвоним.</div>
+                                    </div>
+                                    <div class="delivery-content">
+                                        <div class="delivery-content__logo icon_5"></div>
+                                        <div class="delivery-content__text">Оплата при получении.</div>
+                                    </div>
+                                    <div class="delivery-content">
+                                        <div class="delivery-content__logo icon_6"></div>
+                                        <div class="delivery-content__text">Доставка в течение 3-4 дней.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="feedback__button" id="open-button">
+                            <span class="feedback__button_text">заказать</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="modal">
+        <button class="close-button" id="close-button" title="Закрыть модальное окно">Закрыть</button>
+        <form class="form">
+            <h3 class="form__header">оставьте ваши контактные данные и наш менеджер
+                <span>свяжется с вами</span>
+            </h3>
+            <div class="form-group">
+                <label>Пример: Василий Петров</label>
+                <input type="text" class="name" placeholder="Ваше имя" pattern="^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$">
+                <span class="form-group__error">Проверьте правильность написания</span>
+            </div>
+            <div class="form-group">
+                <label>Пример: +79230098456</label>
+                <input type="number" class="phone" placeholder="Ваш номер телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" >
+                <span class="form-group__error">Проверьте правильность написания</span>
+            </div>
+            <button class="feedback__button submit">
+                <span class="feedback__button_text">заказать</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

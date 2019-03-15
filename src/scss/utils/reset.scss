@@ -1,0 +1,55 @@
+// Reset style
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body,
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+li,
+ol,
+p,
+pre,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

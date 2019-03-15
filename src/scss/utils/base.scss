@@ -1,0 +1,113 @@
+html {
+  width: 100%;
+  height: 100%;
+  @include font(16);
+  font-size: 100%;
+  line-height: $line-height-base;
+  color: $font-base-color;
+}
+
+@media (max-width: $largeDesktop) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: $bigDesktop) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: $smallDesktop) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: $extraSmallDesktop) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: $bigTablet) {
+  html {
+    font-size: 100% !important;
+  }
+}
+@media (max-width: $smallTablet) {
+  html {
+    font-size: 80% !important;
+  }
+}
+@media (max-width: $mobile) {
+  html {
+    font-size: 70% !important;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  @include font(16);
+  line-height: 1;
+  color: $font-base-color;
+  background-color: $font-base-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @include RubikMedium;
+  @include font(45);
+  text-transform: uppercase;
+  @media (max-width: $mobile) {
+    @include font(35);
+  }
+}
+h2 {
+  @include RubikMedium;
+  @include font(35);
+  text-transform: uppercase;
+  @media (max-width: $mobile) {
+    @include font(32);
+  }
+}
+h3 {
+  @include RubikMedium;
+  @include font(25);
+  text-transform: uppercase;
+  @media (max-width: $mobile) {
+    @include font(20);
+  }
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("/assets/img/backround.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: scroll;
+  &__shadow {
+    background-image: url("/assets/img/head.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 rem(150);
+  @media (max-width: $extraDesktop) {
+    padding: 0 rem(40);
+  }
+}
+
+
+
